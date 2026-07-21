@@ -44,28 +44,51 @@ export function About() {
             </Reveal>
             <Reveal delay={0.08}>
               <h2 className="mt-4 font-display text-balance text-4xl font-medium leading-[1.1] text-navy md:text-5xl">
-                Une maison de famille sur la Route Nationale
+                Bienvenue à La Province
               </h2>
             </Reveal>
             <Reveal delay={0.16}>
               <div className="mt-6 flex flex-col gap-5 text-base leading-relaxed text-navy/75 md:text-lg">
                 <p>
-                  La Province est un restaurant familial, à Azazga. Nous avons
-                  refait la salle il y a peu, avec du marbre, un peu de verdure
-                  et une lumière douce. Les grandes tables, elles, n&apos;ont
-                  pas bougé.
+                  Depuis 2012, La Province perpétue avec passion l’art de
+                  recevoir et de partager les plaisirs de la gastronomie. Au fil
+                  des années, notre restaurant s’est imposé comme une adresse
+                  incontournable, reconnue pour la qualité de sa cuisine, son
+                  accueil chaleureux et son exigence de chaque instant.
                 </p>
                 <p>
-                  Chaque matin, on installe le poisson du jour sur la glace
-                  avant de le cuisiner. Ce n&apos;est pas pour la vitrine.
-                  C&apos;est comme ça que le chef décide ce qui part au grill,
-                  et c&apos;est pour ça que les habitués demandent toujours ce
-                  qui vient d&apos;arriver.
+                  Notre restaurant est une destination privilégiée pour les
+                  amateurs de cuisine raffinée. Nous sélectionnons avec soin des
+                  produits de qualité afin de vous proposer une carte riche et
+                  variée : des poissons frais aux saveurs authentiques, des
+                  viandes soigneusement choisies et préparées avec passion, ainsi
+                  que notre spécialité incontournable, le méchoui de chevreau,
+                  véritable signature de la maison, apprécié pour sa tendreté et
+                  son goût incomparable.
                 </p>
                 <p>
-                  On fait de la cuisine française, du poisson, des plats de
-                  chez nous. On ne cherche pas à impressionner. On cherche à
-                  bien faire, avec des produits qu&apos;on choisit nous-mêmes.
+                  Chaque plat est élaboré avec exigence par notre équipe, dans le
+                  respect des traditions culinaires et avec une touche de
+                  créativité. Notre ambition est de vous offrir bien plus
+                  qu’un simple repas : un moment de plaisir, de partage et de
+                  découverte gastronomique.
+                </p>
+                <p>
+                  Dans un cadre élégant et chaleureux, La Province accueille aussi
+                  bien les repas en famille que les déjeuners d’affaires, les
+                  retrouvailles entre amis ou les célébrations de vos plus beaux
+                  événements. Notre équipe est attentive à chaque détail afin de
+                  vous garantir un service irréprochable et une expérience à la
+                  hauteur de vos attentes.
+                </p>
+                <p>
+                  À La Province, nous sommes convaincus que l’excellence réside
+                  dans la qualité de l’accueil, la fraîcheur des produits et la
+                  passion du métier.
+                </p>
+                <p>
+                  Nous serons honorés de vous accueillir et de vous faire
+                  découvrir l’authenticité de notre cuisine.
                 </p>
               </div>
             </Reveal>

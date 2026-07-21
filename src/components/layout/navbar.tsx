@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { AnimatePresence, motion } from "framer-motion";
 import { Menu, Send, X } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
@@ -88,58 +87,44 @@ export function Navbar() {
         </button>
       </Container>
 
-      <AnimatePresence>
-        {open ? (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.3 }}
-            className="fixed inset-0 z-[70] flex flex-col bg-navy lg:hidden"
-          >
-            <Container className="flex items-center justify-between py-6">
-              <span className="text-2xl text-ivory">
-                <Logo />
-              </span>
-              <button
-                type="button"
-                onClick={() => setOpen(false)}
-                className="text-ivory"
-                aria-label="Fermer le menu"
-              >
-                <X className="h-7 w-7" />
-              </button>
-            </Container>
-            <nav
-              className="flex flex-1 flex-col items-center justify-center gap-8"
-              aria-label="Navigation mobile"
+      {open ? (
+        <div className="mobile-menu-panel fixed inset-0 z-[70] flex flex-col bg-navy lg:hidden">
+          <Container className="flex items-center justify-between py-6">
+            <span className="text-2xl text-ivory">
+              <Logo />
+            </span>
+            <button
+              type="button"
+              onClick={() => setOpen(false)}
+              className="text-ivory transition-colors hover:text-gold"
+              aria-label="Fermer le menu"
             >
-              {navLinks.map((link, i) => (
-                <motion.div
-                  key={link.href}
-                  initial={{ opacity: 0, y: 16 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.05 * i, duration: 0.4 }}
-                >
-                  <Link
-                    href={link.href}
-                    onClick={() => setOpen(false)}
-                    className="font-display text-3xl text-ivory transition-colors hover:text-gold"
-                  >
-                    {link.label}
-                  </Link>
-                </motion.div>
-              ))}
-              <Button asChild size="lg" className="mt-4">
-                <a href="#reservation" onClick={() => setOpen(false)}>
-                  <Send className="h-4 w-4" />
-                  Réserver
-                </a>
-              </Button>
-            </nav>
-          </motion.div>
-        ) : null}
-      </AnimatePresence>
+              <X className="h-7 w-7" />
+            </button>
+          </Container>
+          <nav
+            className="flex flex-1 flex-col items-center justify-center gap-8"
+            aria-label="Navigation mobile"
+          >
+            {navLinks.map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                onClick={() => setOpen(false)}
+                className="font-display text-3xl text-ivory transition-colors hover:text-gold"
+              >
+                {link.label}
+              </Link>
+            ))}
+            <Button asChild size="lg" className="mt-4">
+              <a href="#reservation" onClick={() => setOpen(false)}>
+                <Send className="h-4 w-4" />
+                Réserver
+              </a>
+            </Button>
+          </nav>
+        </div>
+      ) : null}
     </header>
   );
 }

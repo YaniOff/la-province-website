@@ -67,7 +67,7 @@ export function Hero() {
             transition={{ duration: 0.9, delay: 0.55 }}
             className="mt-5 font-display text-xl italic text-gold-light sm:text-2xl"
           >
-            Poissons du jour et cuisine de famille
+            L&apos;art de recevoir, le goût de l&apos;excellence depuis 2012.
           </motion.p>
 
           <motion.p
@@ -76,8 +76,10 @@ export function Hero() {
             transition={{ duration: 0.9, delay: 0.7 }}
             className="mt-6 max-w-xl text-balance text-base leading-relaxed text-ivory/75 sm:text-lg"
           >
-            À Azazga, on grille le poisson arrivé le matin et on dresse de
-            grandes tables. Venez comme vous êtes, on s&apos;occupe du reste.
+            Une table gastronomique où l&apos;on prend le temps de bien faire :
+            des produits choisis, une cuisine variée et un accueil sincère. On
+            vous reçoit en couple, en famille ou entre amis, le temps d&apos;un
+            repas comme d&apos;une grande occasion.
           </motion.p>
 
           <motion.div

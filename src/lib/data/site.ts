@@ -1,9 +1,9 @@
 export const site = {
   name: "La Province",
   legalName: "Restaurant La Province",
-  tagline: "Poissons du jour et cuisine de famille à Azazga",
+  tagline: "Restaurant gastronomique à Azazga depuis 2012",
   metaDescription:
-    "Restaurant La Province à Azazga, dans la wilaya de Tizi Ouzou. Le poisson arrive frais chaque matin, la salle est faite pour les grandes tablées et l'on réserve par téléphone ou sur WhatsApp.",
+    "Restaurant La Province à Azazga, dans la wilaya de Tizi Ouzou. Depuis 2012, nous proposons une cuisine gastronomique et variée, des poissons aux viandes, dans une salle spacieuse. Réservation par téléphone ou sur WhatsApp.",
   cuisine: ["Française", "Poissons et fruits de mer", "Algérienne"],
 
   address: {

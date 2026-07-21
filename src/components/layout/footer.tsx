@@ -102,6 +102,11 @@ export function Footer() {
           </p>
           <p>{site.address.city}, {site.address.region}, Algérie</p>
         </Container>
+        <Container className="pb-6 text-center">
+          <p className="text-[11px] tracking-wide text-ivory/30">
+            Designed by Yani Abboute
+          </p>
+        </Container>
       </div>
     </footer>
   );

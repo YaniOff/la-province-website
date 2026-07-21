@@ -90,6 +90,21 @@ body {
   font-family: var(--font-display);
 }
 
+/*
+ * Mobile menu panel. Resting state is fully opaque and visible, so the panel
+ * can never render transparent. @starting-style provides a smooth fade-in on
+ * mount without gating visibility on the animation completing.
+ */
+.mobile-menu-panel {
+  opacity: 1;
+  transition: opacity 260ms ease;
+}
+@starting-style {
+  .mobile-menu-panel {
+    opacity: 0;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;

@@ -27,20 +27,20 @@ const siteUrl = "https://laprovince-azazga.com";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: `${site.name}, ${site.tagline}`,
-    template: `%s · ${site.name}`,
+    default: "La Province",
+    template: "%s · La Province",
   },
   description: site.metaDescription,
   keywords: [
     "La Province",
     "restaurant Azazga",
     "restaurant Tizi Ouzou",
-    "poissons et fruits de mer Algérie",
-    "cuisine française Azazga",
+    "restaurant gastronomique Tizi Ouzou",
+    "cuisine gastronomique Azazga",
     "restaurant familial Azazga",
   ],
   openGraph: {
-    title: `${site.name}, ${site.tagline}`,
+    title: "La Province",
     description: site.metaDescription,
     url: siteUrl,
     siteName: site.name,
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${site.name}, ${site.tagline}`,
+    title: "La Province",
     description: site.metaDescription,
   },
   alternates: {

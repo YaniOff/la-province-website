@@ -1,6 +1,7 @@
 import { Star, Quote } from "lucide-react";
 
 import { testimonials } from "@/lib/data/testimonials";
+import { site } from "@/lib/data/site";
 import { Container } from "@/components/ui/container";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { Reveal } from "@/components/ui/reveal";
@@ -12,6 +13,7 @@ export function Testimonials() {
         <SectionHeading
           eyebrow="Vos mots"
           title="Ce qu'en disent nos clients"
+          description="De vrais avis, laissés par nos clients sur Google et Tripadvisor. Nous les reprenons tels qu'ils ont été écrits."
           light
         />
 
@@ -45,6 +47,19 @@ export function Testimonials() {
             </Reveal>
           ))}
         </div>
+
+        <Reveal delay={0.1}>
+          <div className="mt-12 text-center">
+            <a
+              href={site.social.tripadvisor}
+              target="_blank"
+              rel="noreferrer noopener"
+              className="text-xs font-medium uppercase tracking-[0.2em] text-gold underline-offset-4 transition-colors hover:text-gold-light hover:underline"
+            >
+              Lire tous les avis sur Tripadvisor
+            </a>
+          </div>
+        </Reveal>
       </Container>
     </section>
   );

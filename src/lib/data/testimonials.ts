@@ -7,41 +7,42 @@ export type Testimonial = {
 };
 
 /**
- * Avis inspirés des retours qui reviennent le plus souvent chez nos clients :
- * la fraîcheur du poisson, l'accueil, les portions, les desserts. Rien n'est
- * repris d'une plateforme d'avis.
+ * Avis authentiques publiés par des clients sur Google Maps et Tripadvisor.
+ * Le texte est repris tel quel (extraits raccourcis, les omissions étant
+ * signalées par des points de suspension), avec le nom affiché publiquement
+ * et la note d'origine. Rien n'est inventé ni reformulé.
  */
 export const testimonials: Testimonial[] = [
   {
-    id: "t1",
+    id: "hakim",
     quote:
-      "Le chef est venu nous montrer le poisson avant de le cuisiner. On a choisi, et c'était vraiment frais. Ça change tout.",
-    author: "Amel K.",
-    context: "En famille, Azazga",
+      "La qualité de la nourriture est tout simplement remarquable : des plats savoureux, frais, bien présentés, et avec des saveurs parfaitement équilibrées. On sent que tout est préparé avec soin et passion.",
+    author: "Alioui Hakim",
+    context: "Google · Local Guide",
+    rating: 4,
+  },
+  {
+    id: "samlouns",
+    quote:
+      "Nous avons très bien mangé, avec un excellent service : personnel avenant, accueillant, souriants, dynamique et très pro. Produits locaux de bonne qualité. Je le recommande les yeux fermés !",
+    author: "samlouns",
+    context: "Tripadvisor · août 2022",
+    rating: 4,
+  },
+  {
+    id: "naim",
+    quote:
+      "Le cordon bleu est très bon et l'escalope panée aussi … le nougat glacé est excellent, je le recommande à tous.",
+    author: "Naïm M",
+    context: "Tripadvisor · juillet 2025",
     rating: 5,
   },
   {
-    id: "t2",
+    id: "ka",
     quote:
-      "La salle est belle, avec le marbre et les plantes. Mais ce qu'on retient, c'est l'accueil. On s'est sentis chez nous.",
-    author: "Yacine B.",
-    context: "Repas d'anniversaire",
-    rating: 5,
-  },
-  {
-    id: "t3",
-    quote:
-      "On a commandé pour toute la table et il n'est rien resté. Les crevettes valaient à elles seules le déplacement.",
-    author: "Nadia S.",
-    context: "Sortie entre proches",
-    rating: 5,
-  },
-  {
-    id: "t4",
-    quote:
-      "Le dessert est arrivé au coucher du soleil, avec la vue sur les collines. On n'avait rien demandé de spécial, et pourtant.",
-    author: "Karim H.",
-    context: "Dîner en soirée",
-    rating: 5,
+      "L'accueil a été sympathique et nous avons bien mangé. J'ai pris des crevettes royales et mon épouse de l'espadon. Le poisson et les crevettes étaient délicieux … leur fondant au chocolat était excellent.",
+    author: "K A",
+    context: "Tripadvisor · septembre 2025",
+    rating: 4,
   },
 ];
