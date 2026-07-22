@@ -26,9 +26,9 @@ export const site = {
 
   hours: {
     label: "Tous les jours",
-    display: "de 10h00 à minuit",
-    opens: "10:00",
-    closes: "00:00",
+    display: "11h00 – 23h00",
+    opens: "11:00",
+    closes: "23:00",
   },
 
   social: {

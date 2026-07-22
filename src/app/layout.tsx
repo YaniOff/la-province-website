@@ -93,8 +93,8 @@ export default function RootLayout({
         "Saturday",
         "Sunday",
       ],
-      opens: "10:00",
-      closes: "23:59",
+      opens: "11:00",
+      closes: "23:00",
     },
     sameAs: [site.social.facebook, site.social.tiktok, site.social.tripadvisor],
   };
