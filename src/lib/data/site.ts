@@ -3,7 +3,7 @@ export const site = {
   legalName: "Restaurant La Province",
   tagline: "Restaurant gastronomique à Azazga depuis 2012",
   metaDescription:
-    "Restaurant La Province à Azazga, dans la wilaya de Tizi Ouzou. Depuis 2012, nous proposons une cuisine gastronomique et variée, des poissons aux viandes, dans une salle spacieuse. Réservation par téléphone ou sur WhatsApp.",
+    "Restaurant La Province à Azazga, dans la wilaya de Tizi Ouzou. Depuis 2012, nous proposons une cuisine gastronomique et variée, des poissons aux viandes, dans une salle spacieuse.",
   cuisine: ["Française", "Poissons et fruits de mer", "Algérienne"],
 
   address: {

@@ -3,7 +3,7 @@
 import { useRef } from "react";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { ChevronDown, Send } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 
 import heroImage from "@/assets/images/hero/hero-night-signage-hd.jpg";
 import { Button } from "@/components/ui/button";
@@ -89,12 +89,6 @@ export function Hero() {
             className="mt-10 flex flex-col items-center gap-4 sm:flex-row"
           >
             <Button asChild size="lg">
-              <a href="#reservation">
-                <Send className="h-4 w-4" />
-                Réserver une table
-              </a>
-            </Button>
-            <Button asChild variant="outline" size="lg">
               <a href="#about">La maison</a>
             </Button>
           </motion.div>

@@ -7,7 +7,6 @@ import { FeaturedDishes } from "@/components/sections/featured-dishes";
 import { MenuSection } from "@/components/sections/menu";
 import { Gallery } from "@/components/sections/gallery";
 import { Testimonials } from "@/components/sections/testimonials";
-import { ReservationCta } from "@/components/sections/reservation-cta";
 import { Contact } from "@/components/sections/contact";
 
 export default function Home() {
@@ -22,7 +21,6 @@ export default function Home() {
         <MenuSection />
         <Gallery />
         <Testimonials />
-        <ReservationCta />
         <Contact />
       </main>
       <Footer />

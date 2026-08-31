@@ -2,9 +2,8 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { Menu, Send, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
 
-import { Button } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
 import { Logo } from "@/components/layout/logo";
 import { cn } from "@/lib/utils";
@@ -68,15 +67,6 @@ export function Navbar() {
           ))}
         </nav>
 
-        <div className="hidden items-center gap-3 lg:flex">
-          <Button asChild size="sm">
-            <a href="#reservation">
-              <Send className="h-3.5 w-3.5" />
-              Réserver
-            </a>
-          </Button>
-        </div>
-
         <button
           type="button"
           onClick={() => setOpen(true)}
@@ -116,12 +106,6 @@ export function Navbar() {
                 {link.label}
               </Link>
             ))}
-            <Button asChild size="lg" className="mt-4">
-              <a href="#reservation" onClick={() => setOpen(false)}>
-                <Send className="h-4 w-4" />
-                Réserver
-              </a>
-            </Button>
           </nav>
         </div>
       ) : null}
